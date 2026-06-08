@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sarathi U — Full Stack Developer portfolio, problem solver." />
+  <title>Sarathi U | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" />
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-name">SARATHI U</div>
+    <div class="preloader-bar"><span></span></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <i class="ri-moon-fill"></i>
+  </button>
+
+  <!-- Navigation Dots -->
+  <nav class="nav-dots" id="navDots">
+    <button class="nav-dot active" data-section="hero"><span class="dot-label">Home</span></button>
+    <button class="nav-dot" data-section="about"><span class="dot-label">About</span></button>
+    <button class="nav-dot" data-section="skills"><span class="dot-label">Skills</span></button>
+    <button class="nav-dot" data-section="projects"><span class="dot-label">Projects</span></button>
+    <button class="nav-dot" data-section="experience"><span class="dot-label">Experience</span></button>
+    <button class="nav-dot" data-section="education"><span class="dot-label">Education</span></button>
+    <button class="nav-dot" data-section="certifications"><span class="dot-label">Certifications</span></button>
+    <button class="nav-dot" data-section="achievements"><span class="dot-label">Achievements</span></button>
+    <button class="nav-dot" data-section="contact"><span class="dot-label">Contact</span></button>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <span class="hero-greeting reveal">&lt; Hello World /&gt;</span>
+      <h1 class="hero-name reveal reveal-delay-1">I'm <span class="gradient">Sarathi U</span></h1>
+      <p class="hero-role reveal reveal-delay-2">
+        <span class="typed" id="typed-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <div class="hero-cta reveal reveal-delay-3">
+        <a href="#contact" class="btn btn-primary"><i class="ri-mail-send-line"></i> Get in Touch</a>
+        <a href="#projects" class="btn btn-outline"><i class="ri-code-s-slash-line"></i> View Projects</a>
+      </div>
+      <div class="hero-socials reveal reveal-delay-4">
+        <a href="https://github.com/sarathiudhai" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/sarathi-u-787497305/" target="_blank" aria-label="LinkedIn"><i
+            class="ri-linkedin-box-fill"></i></a>
+        <a href="https://leetcode.com/u/Sarathi_Udhai/" target="_blank" aria-label="LeetCode"><i
+            class="ri-code-box-fill"></i></a>
+        <a href="mailto:sarathi7@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="about">
+      <div class="about-img-wrapper reveal">
+        <img src="profile.jpg" alt="Sarathi U" class="about-img" />
+        <div class="about-img-decor"></div>
+      </div>
+      <div class="about-text">
+        <div class="section-label reveal">About Me</div>
+        <h2 class="reveal reveal-delay-1">Passionate <span>Full Stack Developer</span></h2>
+        <p class="reveal reveal-delay-2">
+          I'm a B.E. Computer and Communication Engineering student at
+          <span class="highlight">Sri Eshwar College of Engineering</span>, with a strong passion for
+          building scalable, full-stack web applications using the <span class="highlight">MERN stack</span>.
+        </p>
+        <p class="reveal reveal-delay-3">
+          With hands-on experience in internships at <span class="highlight">Better Tomorrow</span> and
+          <span class="highlight">Techvanch</span>, I specialize in crafting responsive, high-performance
+          applications with modern frameworks like React, Next.js, and Node.js. I'm also an avid
+          competitive programmer, having solved <span class="highlight">1100+</span> problems across platforms.
+        </p>
+        <div class="about-stats reveal reveal-delay-4">
+          <div class="stat-item">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">1100+</div>
+            <div class="stat-label">Problems Solved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills">
+    <div class="section-header">
+      <div class="section-label reveal">What I Know</div>
+      <h2 class="section-title reveal reveal-delay-1">My <span>Tech Stack</span></h2>
+      <p class="section-subtitle reveal reveal-delay-2">Technologies and tools I work with to bring ideas to life</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i class="ri-terminal-box-fill"></i></div>
+        <h3>Programming</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="skill-icon"><i class="ri-layout-masonry-fill"></i></div>
+        <h3>Web Technologies</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">REST API</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="skill-icon"><i class="ri-brain-fill"></i></div>
+        <h3>Core CS</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA</span>
+          <span class="skill-tag">OOPs</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="skill-icon"><i class="ri-database-2-fill"></i></div>
+        <h3>Databases</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-4">
+        <div class="skill-icon"><i class="ri-tools-fill"></i></div>
+        <h3>Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Postman</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects">
+    <div class="section-header">
+      <div class="section-label reveal">My Work</div>
+      <h2 class="section-title reveal reveal-delay-1">Featured <span>Projects</span></h2>
+      <p class="section-subtitle reveal reveal-delay-2">Full-stack applications I've built from the ground up</p>
+    </div>
+    <div class="bento-grid">
+      <div class="bento-card featured reveal">
+        <img src="project-futuretrack.jpg" alt="FutureTrack AI Career Navigator" class="bento-img"
+          id="img-futuretrack" />
+        <div class="bento-body">
+          <div class="bento-year">2025</div>
+          <h3>FutureTrack: AI Career Navigator & Skilling Assistant</h3>
+          <p>An AI-powered vocational education platform with role-based dashboards for learners, trainers, and
+            policymakers. Features ML-based NSQF prediction, AI Buddy chatbot with Groq LLM, personalized roadmaps,
+            course management, assessments, and analytics dashboards.</p>
+          <div class="bento-stack">
+            <span>React.js</span><span>FastAPI</span><span>Python</span><span>MongoDB Atlas</span>
+            <span>Scikit-learn</span><span>Groq API</span><span>JWT Auth</span>
+          </div>
+          <div class="bento-links">
+            <a href="https://github.com/sarathiudhai/ai-career-navigator" target="_blank"><i class="ri-github-fill"></i>
+              Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="bento-card reveal reveal-delay-1">
+        <img src="project-quizbee.jpg" alt="QuizBee Interactive Quiz App" class="bento-img" id="img-quizbee" />
+        <div class="bento-body">
+          <div class="bento-year">2024</div>
+          <h3>Quizbee: Interactive Quiz App</h3>
+          <p>A full-stack quiz platform with ReactJS frontend and Node.js/MongoDB backend. Features role-based access
+            for admins and students, RESTful APIs, and an engaging, user-friendly quiz experience.</p>
+          <div class="bento-stack">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>REST API</span>
+          </div>
+          <div class="bento-links">
+            <a href="https://github.com/sarathiudhai/Quizbee-Interactive-Quiz-App" target="_blank"><i
+                class="ri-github-fill"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience">
+    <div class="section-header">
+      <div class="section-label reveal">Where I've Worked</div>
+      <h2 class="section-title reveal reveal-delay-1">Work <span>Experience</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line" id="timelineLine"></div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="t-year">2025</div>
+          <h3>MERN Stack Developer Intern</h3>
+          <div class="t-company">Better Tomorrow</div>
+          <p>Developed full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+            Designed efficient MongoDB schemas, built RESTful APIs, and created responsive UIs with modern CSS
+            frameworks.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="t-year">2025</div>
+          <h3>Modern Full Stack Developer Intern</h3>
+          <div class="t-company">Techvanch</div>
+          <p>Trained to develop modern full-stack applications using TypeScript, ReactJS, and Next.js for dynamic web
+            interfaces. Built responsive, high-performance frontends with reusable React components and advanced state
+            management. Gained experience in server-side rendering (SSR) and API integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education">
+    <div class="section-header">
+      <div class="section-label reveal">Learning Journey</div>
+      <h2 class="section-title reveal reveal-delay-1">My <span>Education</span></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="ri-graduation-cap-fill"></i></div>
+        <div class="edu-info">
+          <h3>B.E. Computer & Communication Engineering</h3>
+          <div class="edu-school">Sri Eshwar College of Engineering</div>
+        </div>
+        <div class="edu-meta">
+          <div class="edu-score">CGPA: 7.2</div>
+          <div class="edu-year">2023 – 2027</div>
+        </div>
+      </div>
+      <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-icon"><i class="ri-school-fill"></i></div>
+        <div class="edu-info">
+          <h3>HSC (Higher Secondary)</h3>
+          <div class="edu-school">Arasunagar Matric Higher Secondary School</div>
+        </div>
+        <div class="edu-meta">
+          <div class="edu-score">78%</div>
+          <div class="edu-year">2022 – 2023</div>
+        </div>
+      </div>
+      <div class="edu-card reveal reveal-delay-2">
+        <div class="edu-icon"><i class="ri-book-open-fill"></i></div>
+        <div class="edu-info">
+          <h3>SSLC (Secondary School)</h3>
+          <div class="edu-school">Arasunagar Matric Higher Secondary School</div>
+        </div>
+        <div class="edu-meta">
+          <div class="edu-score">Pass</div>
+          <div class="edu-year">2020 – 2021</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATIONS ==================== -->
+  <section id="certifications">
+    <div class="section-header">
+      <div class="section-label reveal">Credentials</div>
+      <h2 class="section-title reveal reveal-delay-1">My <span>Certifications</span></h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-badge"><i class="ri-award-fill"></i></div>
+        <div class="cert-info">
+          <h4>Java Programming</h4>
+          <div class="cert-platform">Skillrack</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-badge"><i class="ri-award-fill"></i></div>
+        <div class="cert-info">
+          <h4>Web Development</h4>
+          <div class="cert-platform">Internshala</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-badge"><i class="ri-award-fill"></i></div>
+        <div class="cert-info">
+          <h4>Mastering DSA Using C and C++</h4>
+          <div class="cert-platform">Udemy</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-3">
+        <div class="cert-badge"><i class="ri-award-fill"></i></div>
+        <div class="cert-info">
+          <h4>Java Programming</h4>
+          <div class="cert-platform">NPTEL</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-4">
+        <div class="cert-badge"><i class="ri-award-fill"></i></div>
+        <div class="cert-info">
+          <h4>Python (Basis)</h4>
+          <div class="cert-platform">HackerRank</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge"><i class="ri-award-fill"></i></div>
+        <div class="cert-info">
+          <h4>Understanding Incubation and Entrepreneurship</h4>
+          <div class="cert-platform">NPTEL</div>
+          <div class="cert-year">2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section id="achievements">
+    <div class="section-header">
+      <div class="section-label reveal">Competitive Programming</div>
+      <h2 class="section-title reveal reveal-delay-1">My <span>Achievements</span></h2>
+    </div>
+    <div class="achieve-grid">
+      <div class="achieve-card reveal">
+        <span class="achieve-icon">🟡</span>
+        <div class="achieve-num" data-target="150">0</div>
+        <div class="achieve-platform">LeetCode</div>
+        <div class="achieve-desc">Problems Solved</div>
+      </div>
+      <div class="achieve-card reveal reveal-delay-1">
+        <span class="achieve-icon">⭐</span>
+        <div class="achieve-num" data-target="370">0</div>
+        <div class="achieve-platform">CodeChef</div>
+        <div class="achieve-desc">Problems Solved</div>
+      </div>
+      <div class="achieve-card reveal reveal-delay-2">
+        <span class="achieve-icon">🟢</span>
+        <div class="achieve-num" data-target="610">0</div>
+        <div class="achieve-platform">Skillrack</div>
+        <div class="achieve-desc">Problems Solved</div>
+      </div>
+      <div class="achieve-card reveal reveal-delay-3">
+        <span class="achieve-icon">🏆</span>
+        <div class="achieve-num" data-target="3">0</div>
+        <div class="achieve-platform">HackerRank</div>
+        <div class="achieve-desc">Stars in C</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="section-header">
+      <div class="section-label reveal">Say Hello</div>
+      <h2 class="section-title reveal reveal-delay-1">Get in <span>Touch</span></h2>
+    </div>
+    <div class="contact-wrapper reveal reveal-delay-2">
+      <div class="contact-card">
+        <h3>Let's Build Something Together</h3>
+        <p class="contact-sub">I'm always open to discussing new projects, creative ideas, or opportunities to be part
+          of your vision.</p>
+        <div class="contact-items">
+          <div class="contact-item" data-copy="sarathi7@gmail.com">
+            <i class="ri-mail-fill"></i>
+            <span>sarathi7@gmail.com</span>
+            <span class="copy-hint">Click to copy</span>
+          </div>
+          <div class="contact-item" data-copy="7010766304">
+            <i class="ri-phone-fill"></i>
+            <span>+91 7010766304</span>
+            <span class="copy-hint">Click to copy</span>
+          </div>
+          <div class="contact-item">
+            <i class="ri-map-pin-fill"></i>
+            <span>Coimbatore, Tamil Nadu</span>
+            <span class="copy-hint" style="opacity: 0"></span>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com/sarathiudhai" target="_blank" aria-label="GitHub"><i
+              class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/sarathi-u-787497305/" target="_blank" aria-label="LinkedIn"><i
+              class="ri-linkedin-box-fill"></i></a>
+          <a href="https://leetcode.com/u/Sarathi_Udhai/" target="_blank" aria-label="LeetCode"><i
+              class="ri-code-box-fill"></i></a>
+          <a href="https://www.skillrack.com/faces/resume.xhtml?id=484064&key=4f0bf939aa5c10eb2dc7eb8b7a25bddb80750058"
+            target="_blank" aria-label="Skillrack"><i class="ri-trophy-fill"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Send a Message</h3>
+        <p class="contact-sub">Fill out the form below and I'll get back to you as soon as possible.</p>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="b5afe051-43b3-4f8b-a67e-dfb8a9f13e60">
+          <input type="hidden" name="subject" value="New message from portfolio!">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="NAME" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="EMAIL" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder=" MESSAGE" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="ri-send-plane-fill"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed & Built by <span>Sarathi U</span> &copy; 2025. All rights reserved.</p>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

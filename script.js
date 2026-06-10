@@ -130,10 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedEl = document.getElementById('typed-text');
   const roles = [
     'Full Stack Developer',
-    'MERN Stack Developer',
-    'Problem Solver',
-    'Competitive Programmer',
-    'Tech Enthusiast'
+    'Vibe Coder',
+    'Problem Solver'
   ];
   let roleIdx = 0, charIdx = 0, isDeleting = false;
 
